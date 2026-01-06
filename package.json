@@ -1,0 +1,31 @@
+{
+  "name": "video-streaming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.ts",
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "lint": "eslint --cache \"{src,apps,libs,test}/**/*.ts\" --report-unused-disable-directives --max-warnings 0",
+    "migrate:dev": "npx prisma migrate dev",
+    "migrate:dev:create": "npx prisma migrate dev --create-only",
+    "migrate:deploy": "npx prisma migrate deploy",
+    "prisma:studio": "npx prisma studio",
+    "prisma:seed": "npx prisma db seed",
+    "prisma:generate": "npx prisma generate"
+  },
+  "keywords": [],
+  "author": "github.com/infosaqib",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@prisma/adapter-better-sqlite3": "^7.2.0",
+    "@prisma/client": "^7.2.0",
+    "dotenv": "^17.2.3"
+  }
+}
