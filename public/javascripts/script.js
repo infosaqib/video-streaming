@@ -27,3 +27,11 @@ const invoices = new Promise((resolve, reject) => {
   .catch((error) => {
     console.error(error);
   });
+
+//Async/Await
+async function generator(val) {
+  const products = await fetch("https:dummyjson.com/product/1");
+  const data = await products.json();
+  console.log(data);
+}
+generator();
